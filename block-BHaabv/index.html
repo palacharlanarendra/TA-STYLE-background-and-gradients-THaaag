@@ -1,0 +1,217 @@
+<!-- writeCode
+
+- Create a layout according to the design shown below.
+
+![Backgrounds and gradients level 2](https://raw.githubusercontent.com/suraj122/AC-STYLE-images/master/background-and-gradients/ex-2.jpg)
+
+- Using CSS resets is necessary.
+
+- Use semantic tags and keep the nesting and indentation proper.
+
+- Work on typography in detail. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2 | Background and Gradients</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2bbf3cce3b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/styles/styles.css"/>
+</head>
+<body>
+    <div>
+        <header class="header">
+            <section class="container">
+                <div class="flex">
+                    <h1 class="heading padding">social media dashboard</h1>
+                    <nav class="flex toggle">
+                        <p class="para">dark mode</p>
+                        <img src="assets/icons/toggle.png"/>
+                    </nav>
+                </div>
+                <div class="para">total followers: 23,004</div>
+            </section>
+        </header>
+        <main class="main">
+            <section class="hero-section">
+                <div class="container flex">
+                    <div class="box box-1">
+                        <div class="social-icon1">
+                            <i class="fab fa-facebook-square"></i>
+                            <span class="small-para">@nathanf</span>
+                        </div>
+                        <div class="count">
+                            <h2>1987</h2>
+                            <p class="thin-para">followers</p>
+                        </div>
+                        <div class="followers-count">
+                            <i class="fas fa-sort-up green"></i>
+                            <span>12 Today</span>
+                        </div>
+                    </div>
+                    <div class="box box-2">
+                        <div class="social-icon2">
+                            <i class="fab fa-twitter"></i>
+                            <span class="small-para">@nathanf</span>
+                        </div>
+                        <div class="count">
+                            <h2>1044</h2>
+                            <p class="thin-para">followers</p>
+                        </div>
+                        <div class="followers-count">
+                            <i class="fas fa-sort-up green"></i>
+                            <span>99 Today</span>
+                        </div>
+                    </div>
+                    <div class="box box-3">
+                        <div class="social-icon3">
+                            <i class="fab fa-instagram-square"></i>
+                            <span class="small-para">@realnathanf</span>
+                        </div>
+                        <div class="count">
+                            <h2>11k</h2>
+                            <p class="thin-para">followers</p>
+                        </div>
+                        <div class="followers-count">
+                            <i class="fas fa-sort-up green"></i>
+                            <span>1099 Today</span>
+                        </div>
+                    </div>
+                    <div class="box box-4">
+                        <div class="social-icon4">
+                            <i class="fab fa-youtube-square"></i>
+                            <span class="small-para">Nathan F.</span>
+                        </div>
+                        <div class="count">
+                            <h2>1987</h2>
+                            <p class="thin-para">subscribers</p>
+                        </div>
+                        <div class="followers-count">
+                            <i class="fas fa-sort-up green"></i>
+                            <span>12 Today</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="overview-section">
+                <div class="container ">
+                    <h1 class="heading padding offset">overview - today</h1>
+                    <div class="flex">
+                        <div class="box box-2-1">
+                            <div class="first-line flex social-icon1">
+                                <div class="para">page views</div>
+                                <i class="fab fa-facebook-square"></i>
+                            </div>
+                            <div class="second-line flex">
+                                 <div class="heading">87</div>
+                                 <div class="followers-count">
+                                     <i class="fas fa-sort-up green"></i>
+                                     <span>3%</span>
+                                 </div>
+                             </div>
+                        </div>
+                        <div class="box box-2-1">
+                             <div class="first-line flex social-icon1">
+                                 <div class="para">likes</div>
+                                 <i class="fab fa-facebook-square"></i>
+                             </div>
+                             <div class="second-line flex">
+                                 <div class="heading">52</div>
+                                 <div class="followers-count">
+                                    <i class="fas fa-sort-down red"></i>
+                                     <span class="red">2%</span>
+                                 </div>
+                             </div>
+                        </div>
+                        <div class="box box-2-1">
+                             <div class="first-line flex social-icon3">
+                                 <div class="para">likes</div>
+                                 <i class="fab fa-instagram-square "></i>
+                             </div>
+                             <div class="second-line flex">
+                                 <div class="heading">5462</div>
+                                 <div class="followers-count">
+                                     <i class="fas fa-sort-up green"></i>
+                                     <span>2257%</span>
+                                 </div>
+                             </div>
+                        </div>
+                        <div class="box box-2-1">
+                             <div class="first-line flex social-icon3">
+                                 <div class="para">profile views</div>
+                                 <i class="fab fa-instagram-square "></i>
+                             </div>
+                             <div class="second-line flex">
+                                 <div class="heading">52k</div>
+                                 <div class="followers-count">
+                                     <i class="fas fa-sort-up green"></i>
+                                     <span>1375%</span>
+                                 </div>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="flex offset2">
+                        <div class="box box-2-1">
+                            <div class="first-line flex social-icon2">
+                                <div class="para">Retweets</div>
+                                <i class="fab fa-twitter"></i>
+                            </div>
+                            <div class="second-line flex">
+                                 <div class="heading">117</div>
+                                 <div class="followers-count">
+                                     <i class="fas fa-sort-up green"></i>
+                                     <span>303%</span>
+                                 </div>
+                             </div>
+                        </div>
+                        <div class="box box-2-1">
+                             <div class="first-line flex social-icon2">
+                                 <div class="para">Likes</div>
+                                 <i class="fab fa-twitter"></i>
+                             </div>
+                             <div class="second-line flex">
+                                 <div class="heading">507</div>
+                                 <div class="followers-count">
+                                     <i class="fas fa-sort-up green"></i>
+                                     <span>553%</span>
+                                 </div>
+                             </div>
+                        </div>
+                        <div class="box box-2-1">
+                             <div class="first-line flex social-icon4">
+                                 <div class="para">Likes</div>
+                                 <i class="fab fa-youtube-square"></i>
+                             </div>
+                             <div class="second-line flex">
+                                 <div class="heading">107</div>
+                                 <div class="followers-count">
+                                    <i class="fas fa-sort-down red"></i>
+                                     <span class="red">19%</span>
+                                 </div>
+                             </div>
+                        </div>
+                        <div class="box box-2-1">
+                             <div class="first-line flex social-icon4">
+                                 <div class="para">total views</div>
+                                 <i class="fab fa-youtube-square"></i>
+                             </div>
+                             <div class="second-line flex">
+                                 <div class="heading">1407</div>
+                                 <div class="followers-count">
+                                    <i class="fas fa-sort-down red"></i>
+                                     <span class="red">12%</span>
+                                 </div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+ 
+        </main>
+
+    </div>
+    
+</body>
+</html>
