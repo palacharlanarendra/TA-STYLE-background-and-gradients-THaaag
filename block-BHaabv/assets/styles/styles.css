@@ -50,6 +50,7 @@ table {
 /* general styles */
 body{
 	font-family: 'Roboto', sans-serif;
+	background-color: #1D2029;
 }
 .container{
 	max-width:1330px;
@@ -62,6 +63,12 @@ body{
 	justify-content: space-between;
 	align-items:center;
 }
+.center2{
+	display:flex;
+	align-items: center;
+	justify-content: center;
+}
+
 /*common styles */
 .heading{
 	font:bold 40px "Roboto",sans-serif;
@@ -76,6 +83,9 @@ body{
 }
 .padding{
 	padding:10px 0;
+}
+.padding-header{
+	padding-bottom:150px;
 }
 .small-para{
 	font:500 15px "Roboto",sans-serif;
@@ -125,12 +135,23 @@ body{
 }
 .followers-count .red{
 	margin-right: 5px;
+	
 }
-
+.followers-count i{
+	margin-top: -10px;
+}
+/*main styles*/
+.main{
+	position: relative;
+}
 /* header styles */
+
 .header{
 	padding:20px 0;
 	background-color: #20222F;
+	position: absolute;
+	width:100%;
+	border-radius: 10px;
 	
 }
 .toggle {
@@ -143,13 +164,34 @@ body{
 .toggle p{
 	margin-right:20px;
 }
+.toggle-btn{
+	display:inline-block;
+	/* border:2px solid blue; */
+	width:50px;
+	height:28px;
+	background:linear-gradient(to right,#4EA1C4,#6CC5A0) ;
+	border-radius:30px;
+}
+.circle{
+	width:20px;
+	height:20px;
+	border-radius:50%;
+	background-color: #252944;
+	margin-top: 4px;
+	margin-left:4px;
+}
+
 /* hero section styles */
+.offset-box{
+	margin-top: 150px;
+}
 .box{
 	flex:0 1 18%;
 	padding:30px;
 	text-align: center;
 	background-color:#252B43;
 	border-radius: 6px;
+	position:relative;
 }
 .image-align{
 	display:inline-block;
@@ -163,7 +205,6 @@ body{
 }
 .hero-section{
 	padding-top:20px;
-	background-color: #20222F;
 }
 .social-icon1 i{
 	color:#358ADF;
@@ -186,12 +227,22 @@ body{
 .box-2{
 	border-top:5px solid #46A2EE;
 }
-.box-3{
+/* .box-3{
 	border-top: 5px solid transparent;
-	border-radius:10px;
     border-image: linear-gradient(to right, #EFB271,#D2678F);
 	border-image-slice: 1;
 	
+} */
+.border-insta{
+	width:100%;
+	height:4px;
+	background: linear-gradient(to right, #EFB271,#D2678F);
+	position:absolute;
+	/* border: 2px solid blue; */
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	top:0;
+	right:0;
 }
 .box-4{
 	border-top:5px solid #C43C2A;
@@ -199,7 +250,6 @@ body{
 
 /*overview styles*/
 .overview-section{
-	background-color: #20222F;
 	padding-top:10px;
 	padding-bottom:30px;
 }
@@ -222,4 +272,8 @@ body{
 /*main*/
 main i{
 	font-size: 20px;
+}
+.first-line img,.instagram img{
+	width:20px;
+	vertical-align: middle;
 }
